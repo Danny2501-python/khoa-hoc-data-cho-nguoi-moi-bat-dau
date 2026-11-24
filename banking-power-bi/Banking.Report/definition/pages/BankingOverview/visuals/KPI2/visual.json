@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "KPI2",
+  "position": {
+    "x": 648,
+    "y": 100,
+    "width": 296,
+    "height": 116,
+    "z": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Thanh toán"
+                    }
+                  },
+                  "Property": "Lệnh thanh toán"
+                }
+              },
+              "queryRef": "Thanh toán.Lệnh thanh toán",
+              "nativeQueryRef": "Lệnh thanh toán",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Lệnh thanh toán'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

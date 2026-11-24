@@ -1,0 +1,395 @@
+{
+  "name": "Banking",
+  "compatibilityLevel": 1601,
+  "model": {
+    "culture": "vi-VN",
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "tables": [
+      {
+        "name": "Khách hàng",
+        "columns": [
+          {
+            "name": "Nhãn",
+            "dataType": "string",
+            "sourceColumn": "Nhãn",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Khách hàng CIF",
+            "expression": "SUM('Khách hàng'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Khách hàng",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"Tổng\"\", 1000]]\"), T = #table({\"Nhãn\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Nhãn\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Giao dịch",
+        "columns": [
+          {
+            "name": "Nhãn",
+            "dataType": "string",
+            "sourceColumn": "Nhãn",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Giao dịch Core",
+            "expression": "SUM('Giao dịch'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Giao dịch",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"Tổng\"\", 20000]]\"), T = #table({\"Nhãn\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Nhãn\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Thanh toán",
+        "columns": [
+          {
+            "name": "Nhãn",
+            "dataType": "string",
+            "sourceColumn": "Nhãn",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Lệnh thanh toán",
+            "expression": "SUM('Thanh toán'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Thanh toán",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"Tổng\"\", 3000]]\"), T = #table({\"Nhãn\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Nhãn\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Khoản vay",
+        "columns": [
+          {
+            "name": "Nhãn",
+            "dataType": "string",
+            "sourceColumn": "Nhãn",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Tài khoản vay",
+            "expression": "SUM('Khoản vay'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Khoản vay",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"Tổng\"\", 500]]\"), T = #table({\"Nhãn\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Nhãn\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Xu hướng Core",
+        "columns": [
+          {
+            "name": "Tháng",
+            "dataType": "string",
+            "sourceColumn": "Tháng",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Số giao dịch theo tháng",
+            "expression": "SUM('Xu hướng Core'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Xu hướng Core",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"2024-07\"\", 77], [\"\"2024-08\"\", 217], [\"\"2024-09\"\", 210], [\"\"2024-10\"\", 217], [\"\"2024-11\"\", 210], [\"\"2024-12\"\", 217], [\"\"2025-01\"\", 999], [\"\"2025-02\"\", 926], [\"\"2025-03\"\", 1006], [\"\"2025-04\"\", 978], [\"\"2025-05\"\", 1019], [\"\"2025-06\"\", 966], [\"\"2025-07\"\", 964], [\"\"2025-08\"\", 811], [\"\"2025-09\"\", 739], [\"\"2025-10\"\", 775], [\"\"2025-11\"\", 807], [\"\"2025-12\"\", 819], [\"\"2026-01\"\", 766], [\"\"2026-02\"\", 717], [\"\"2026-03\"\", 761], [\"\"2026-04\"\", 742], [\"\"2026-05\"\", 788], [\"\"2026-06\"\", 725], [\"\"2026-07\"\", 776], [\"\"2026-08\"\", 748], [\"\"2026-09\"\", 759], [\"\"2026-10\"\", 777], [\"\"2026-11\"\", 484]]\"), T = #table({\"Tháng\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Tháng\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Tiền tệ Core",
+        "columns": [
+          {
+            "name": "Tiền tệ",
+            "dataType": "string",
+            "sourceColumn": "Tiền tệ",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Số giao dịch theo tiền tệ",
+            "expression": "SUM('Tiền tệ Core'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Tiền tệ Core",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"EUR\"\", 233], [\"\"USD\"\", 473], [\"\"VND\"\", 19294]]\"), T = #table({\"Tiền tệ\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Tiền tệ\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kênh Core",
+        "columns": [
+          {
+            "name": "Kênh",
+            "dataType": "string",
+            "sourceColumn": "Kênh",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Số giao dịch theo kênh",
+            "expression": "SUM('Kênh Core'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Kênh Core",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"API\"\", 3333], [\"\"ATM\"\", 3333], [\"\"BRANCH\"\", 3333], [\"\"MOBILE\"\", 3334], [\"\"POS\"\", 3333], [\"\"WEB\"\", 3334]]\"), T = #table({\"Kênh\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Kênh\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kết quả thanh toán",
+        "columns": [
+          {
+            "name": "Trạng thái",
+            "dataType": "string",
+            "sourceColumn": "Trạng thái",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Số lệnh theo trạng thái",
+            "expression": "SUM('Kết quả thanh toán'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Kết quả thanh toán",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"PENDING\"\", 883], [\"\"POSTED\"\", 1267], [\"\"REJECTED\"\", 850]]\"), T = #table({\"Trạng thái\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Trạng thái\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Hồ sơ KYC",
+        "columns": [
+          {
+            "name": "Trạng thái",
+            "dataType": "string",
+            "sourceColumn": "Trạng thái",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Số CIF theo KYC",
+            "expression": "SUM('Hồ sơ KYC'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Hồ sơ KYC",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"PENDING\"\", 76], [\"\"VERIFIED\"\", 924]]\"), T = #table({\"Trạng thái\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Trạng thái\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Danh mục vay",
+        "columns": [
+          {
+            "name": "Trạng thái",
+            "dataType": "string",
+            "sourceColumn": "Trạng thái",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Số khoản vay theo trạng thái",
+            "expression": "SUM('Danh mục vay'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Danh mục vay",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"ACTIVE\"\", 478], [\"\"CLOSED\"\", 5], [\"\"OVERDUE\"\", 17]]\"), T = #table({\"Trạng thái\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Trạng thái\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kiểm soát GL",
+        "columns": [
+          {
+            "name": "Kết quả",
+            "dataType": "string",
+            "sourceColumn": "Kết quả",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Số lượng",
+            "dataType": "int64",
+            "sourceColumn": "Số lượng",
+            "isHidden": true,
+            "summarizeBy": "sum"
+          }
+        ],
+        "measures": [
+          {
+            "name": "Số journal theo kết quả",
+            "expression": "SUM('Kiểm soát GL'[Số lượng])",
+            "formatString": "#,0"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Kiểm soát GL",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Rows = Json.Document(\"[[\"\"Cân\"\", 20000]]\"), T = #table({\"Kết quả\",\"Số lượng\"}, Rows), Typed = Table.TransformColumnTypes(T, {{\"Kết quả\", type text}, {\"Số lượng\", Int64.Type}}) in Typed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

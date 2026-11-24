@@ -1,0 +1,13 @@
+{
+  "name": "Banking Operations",
+  "dataColors": [
+    "#116B72",
+    "#E3A043",
+    "#4D61AA",
+    "#8B5B92",
+    "#607083"
+  ],
+  "background": "#EDF3F8",
+  "foreground": "#13273C",
+  "tableAccent": "#116B72"
+}

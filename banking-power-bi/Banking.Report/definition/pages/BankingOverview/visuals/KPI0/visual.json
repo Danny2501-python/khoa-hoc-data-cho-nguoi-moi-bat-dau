@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "KPI0",
+  "position": {
+    "x": 24,
+    "y": 100,
+    "width": 296,
+    "height": 116,
+    "z": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Khách hàng"
+                    }
+                  },
+                  "Property": "Khách hàng CIF"
+                }
+              },
+              "queryRef": "Khách hàng.Khách hàng CIF",
+              "nativeQueryRef": "Khách hàng CIF",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Khách hàng CIF'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

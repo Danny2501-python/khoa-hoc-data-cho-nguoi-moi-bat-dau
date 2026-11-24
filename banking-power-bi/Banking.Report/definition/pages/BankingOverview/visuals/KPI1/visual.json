@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "KPI1",
+  "position": {
+    "x": 336,
+    "y": 100,
+    "width": 296,
+    "height": 116,
+    "z": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Giao dịch"
+                    }
+                  },
+                  "Property": "Giao dịch Core"
+                }
+              },
+              "queryRef": "Giao dịch.Giao dịch Core",
+              "nativeQueryRef": "Giao dịch Core",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Giao dịch Core'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

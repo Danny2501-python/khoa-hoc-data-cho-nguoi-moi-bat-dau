@@ -1,0 +1,8 @@
+metric,value
+customer_count,1000
+transaction_count,20000
+payment_count,3000
+loan_count,500
+gl_line_count,40000
+gl_journal_currency_count,20000
+gl_unbalanced_count,0

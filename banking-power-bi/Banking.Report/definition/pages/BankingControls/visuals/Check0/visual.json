@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "Check0",
+  "position": {
+    "x": 24,
+    "y": 100,
+    "width": 608,
+    "height": 288,
+    "z": 0
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Kết quả thanh toán"
+                    }
+                  },
+                  "Property": "Số lệnh theo trạng thái"
+                }
+              },
+              "queryRef": "Kết quả thanh toán.Số lệnh theo trạng thái",
+              "nativeQueryRef": "Số lệnh theo trạng thái",
+              "active": true
+            }
+          ]
+        },
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Kết quả thanh toán"
+                    }
+                  },
+                  "Property": "Trạng thái"
+                }
+              },
+              "queryRef": "Kết quả thanh toán.Trạng thái",
+              "nativeQueryRef": "Trạng thái",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Trạng thái lệnh thanh toán'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

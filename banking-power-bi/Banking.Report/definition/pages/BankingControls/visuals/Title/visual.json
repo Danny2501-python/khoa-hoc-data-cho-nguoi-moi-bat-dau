@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "Title",
+  "position": {
+    "x": 24,
+    "y": 18,
+    "width": 1232,
+    "height": 70,
+    "z": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Vận hành ngân hàng | Kiểm soát",
+                    "textStyle": {
+                      "fontSize": "26pt",
+                      "fontWeight": "bold",
+                      "color": "#13273C"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

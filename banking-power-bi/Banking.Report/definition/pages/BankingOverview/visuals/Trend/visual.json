@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "Trend",
+  "position": {
+    "x": 24,
+    "y": 232,
+    "width": 800,
+    "height": 268,
+    "z": 0
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Xu hướng Core"
+                    }
+                  },
+                  "Property": "Số giao dịch theo tháng"
+                }
+              },
+              "queryRef": "Xu hướng Core.Số giao dịch theo tháng",
+              "nativeQueryRef": "Số giao dịch theo tháng",
+              "active": true
+            }
+          ]
+        },
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Xu hướng Core"
+                    }
+                  },
+                  "Property": "Tháng"
+                }
+              },
+              "queryRef": "Xu hướng Core.Tháng",
+              "nativeQueryRef": "Tháng",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Số giao dịch theo tháng'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "Check3",
+  "position": {
+    "x": 648,
+    "y": 404,
+    "width": 608,
+    "height": 288,
+    "z": 0
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Kiểm soát GL"
+                    }
+                  },
+                  "Property": "Số journal theo kết quả"
+                }
+              },
+              "queryRef": "Kiểm soát GL.Số journal theo kết quả",
+              "nativeQueryRef": "Số journal theo kết quả",
+              "active": true
+            }
+          ]
+        },
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Kiểm soát GL"
+                    }
+                  },
+                  "Property": "Kết quả"
+                }
+              },
+              "queryRef": "Kiểm soát GL.Kết quả",
+              "nativeQueryRef": "Kết quả",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Đối soát Nợ/Có theo journal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
