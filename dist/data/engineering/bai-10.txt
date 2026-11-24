@@ -1,0 +1,22 @@
+COPY và kiểm soát sau nạp
+
+COPY nạp lô dữ liệu S3 vào staging. Kiểm độ hợp lệ trước khi ghi fact. So sánh count theo ngày, số giao dịch duy nhất và sum tiền. Dùng EXPLAIN cùng số đo thực tế để xem cách quét và JOIN. Lab dùng SQLite cho truy vấn kiểm soát và xem tài liệu chính thức cho cú pháp Redshift hiện hành.
+
+THỰC HÀNH
+
+Chạy kiểm số dòng, mã duy nhất và tổng tiền theo ngày. Chênh số dòng so với mã duy nhất ngày 20 chỉ ra bản ghi cần kiểm tra.
+
+VIDEO
+
+https://www.youtube.com/watch?v=6hk0Kvjrvfo
+
+TỰ KIỂM TRA
+
+COPY nên nạp lô chưa kiểm vào đâu?
+Đáp án: Staging
+
+Chỉ số nào giúp phát hiện mã bị lặp?
+Đáp án: So count(*) và count(distinct transaction_id)
+
+Khi count khớp mà tiền lệch, nên làm gì?
+Đáp án: Đối chiếu amount theo ngày và khóa chi tiết

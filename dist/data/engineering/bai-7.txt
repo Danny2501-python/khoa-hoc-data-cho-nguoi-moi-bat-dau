@@ -1,0 +1,22 @@
+Golden record, crosswalk và stewardship
+
+Khóa CIF nguồn chỉ duy nhất trong phạm vi source_system. Dùng crosswalk để ghép CIF nguồn sang master_cif. Golden record cần quy tắc ưu tiên nguồn cho từng thuộc tính, lịch sử hiệu lực và người chịu trách nhiệm duyệt ngoại lệ. Đo tỷ lệ mapping thiếu trước khi tính KPI theo khách hàng.
+
+THỰC HÀNH
+
+Chạy SQL để thấy hai tài khoản cùng thuộc M01. Thử LEFT JOIN từ bảng giao dịch sang tài khoản để tìm giao dịch cần cách ly.
+
+VIDEO
+
+https://www.youtube.com/watch?v=l83bkKJh1wM
+
+TỰ KIỂM TRA
+
+Khóa nào đáng dùng để nối bản ghi CIF nguồn?
+Đáp án: source_system và source_cif
+
+Quy tắc survivorship quyết định điều gì?
+Đáp án: Nguồn nào cung cấp giá trị được giữ
+
+Ai nên duyệt trường hợp khớp danh tính mơ hồ?
+Đáp án: Data steward

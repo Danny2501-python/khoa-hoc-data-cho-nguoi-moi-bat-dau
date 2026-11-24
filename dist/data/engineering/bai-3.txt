@@ -1,0 +1,22 @@
+Staging, khóa và đối soát
+
+Nạp batch vào staging trước để kiểm kiểu dữ liệu, trùng khóa và tài khoản thiếu. Với Oracle MERGE, chuẩn bị tối đa một dòng nguồn sạch cho mỗi khóa đích. Transaction cho phép hoàn tác nhóm thay đổi khi bước ghi thất bại. Lab dùng SQLite để thực hành SELECT và kiểm tra điều kiện đầu vào.
+
+THỰC HÀNH
+
+Chạy truy vấn, sau đó đổi GROUP BY sang account_id để đối soát theo tài khoản. Kết quả mong đợi là A01 150.000 VND và A02 80.000 VND.
+
+VIDEO
+
+https://www.youtube.com/watch?v=y2CICRujsVw
+
+TỰ KIỂM TRA
+
+MERGE dựa vào điều kiện nào để tìm dòng đích?
+Đáp án: Điều kiện ON theo khóa nghiệp vụ
+
+Bảng nào phù hợp để kiểm dữ liệu trước khi nạp fact?
+Đáp án: Staging
+
+Tác dụng của rollback khi lần nạp gặp lỗi?
+Đáp án: Hoàn tác các thay đổi chưa commit

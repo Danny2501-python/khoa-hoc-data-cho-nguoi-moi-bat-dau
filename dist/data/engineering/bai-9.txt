@@ -1,0 +1,22 @@
+Quyền truy cập theo vùng dữ liệu
+
+Pipeline cần đọc đúng raw object và ghi đúng curated prefix. Xem riêng các hành động đọc object, ghi object và liệt kê bucket. IAM role giúp cấp quyền tạm thời. Versioning và lifecycle giải quyết các nhu cầu khác nhau: khả năng khôi phục và giữ dữ liệu theo thời hạn.
+
+THỰC HÀNH
+
+Chọn thao tác để xem quyết định của chính sách mô phỏng cho vai trò ETL.
+
+VIDEO
+
+https://www.youtube.com/watch?v=ecv-19sYL3w
+
+TỰ KIỂM TRA
+
+Quyền nào phù hợp với worker chuyển raw sang curated?
+Đáp án: Đọc raw và ghi curated theo prefix
+
+Versioning giúp làm gì?
+Đáp án: Khôi phục phiên bản object cũ
+
+Lifecycle phù hợp để quản lý việc gì?
+Đáp án: Chuyển lớp lưu trữ hoặc hết hạn dữ liệu

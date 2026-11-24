@@ -1,0 +1,97 @@
+.bank-home {margin:26px 0 6px}
+.bank-home-title h2,.bank-shelf>h2 {font-size:1.28rem;letter-spacing:-.025em}
+.bank-shortcuts {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}
+.bank-shortcuts a,.bank-cross {display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #d9e3d9;border-radius:12px;padding:14px}
+.bank-shorticon {background:#e3f0e7;color:#1f664c;width:38px;height:38px;border-radius:10px;display:grid;place-items:center;flex-shrink:0}
+.bank-shortcuts a:nth-child(2) .bank-shorticon {color:#426275;background:#e8eff3}
+.bank-shortcuts a:nth-child(3) .bank-shorticon {color:#825122;background:#fbedd9}
+.bank-shortcuts a:nth-child(4) .bank-shorticon {color:#615184;background:#f0ecf6}
+.bank-shortcuts strong,.bank-cross strong {display:block;font-size:.98rem;line-height:1.35}
+.bank-shortcuts small,.bank-cross small {display:block;color:#50695c;font-size:.82rem;line-height:1.4;margin-top:4px}
+.bank-shortcuts a:hover,.bank-cross:hover,.bank-lesson:hover,.bank-cases a:hover {border-color:#7ca88e;background:#f7fbf6}
+.bank-cross {margin:0 0 20px;padding:15px 19px;background:#edf5ee}
+.bank-cross>svg:last-child {margin-left:auto}
+.bank-heading {max-width:56rem;margin:4px 0 23px}
+.bank-heading .eyebrow,.bank-kicker {color:#347058}
+.bank-heading h1 {font-size:clamp(1.9rem,3.4vw,2.9rem);line-height:1.15;margin:6px 0 12px}
+.bank-heading p {color:#4a6054;font-size:1.03rem;max-width:50rem}
+.bank-tabs {display:flex;flex-wrap:wrap;gap:5px;border-bottom:1px solid #d3dfd5;margin-bottom:22px}
+.bank-tabs a {display:inline-flex;align-items:center;gap:7px;padding:10px 12px;color:#455a4e;border-bottom:3px solid transparent;font-size:.94rem;font-weight:600}
+.bank-tabs a svg {width:17px;height:17px}
+.bank-tabs a[aria-current] {color:#13563e;border-bottom-color:#27764f;background:#e8f1e7;border-radius:7px 7px 0 0}
+.bank-tabs a:hover {color:#0b5739;background:#edf4ed}
+.bank-lesson-grid,.bank-terms,.bank-source-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.bank-lesson,.bank-term,.bank-source {background:#fff;border:1px solid #dce4db;border-radius:14px;padding:21px;min-width:0;overflow-wrap:anywhere}
+.bank-lesson {display:flex;flex-direction:column}
+.bank-kicker {font-size:.79rem;font-weight:700;display:block;letter-spacing:.025em;margin-bottom:8px}
+.bank-lesson h2,.bank-term h2 {font-size:1.24rem;margin-bottom:8px}
+.bank-lesson p,.bank-term p,.bank-source p {color:#40574a;line-height:1.57}
+.bank-read,.bank-ext {color:#196544;font-weight:650;display:inline-flex;gap:4px;align-items:center}
+.bank-read {font-size:.88rem;margin-top:auto;padding-top:18px}
+.bank-read svg,.bank-ext svg {width:15px;height:15px}
+.bank-ext:hover,.bank-side>a:hover {text-decoration:underline}
+.bank-columns {display:grid;grid-template-columns:minmax(0,2.35fr) minmax(230px,1fr);gap:18px}
+.bank-columns>*,.bank-prose {min-width:0}
+.bank-prose,.bank-side,.bank-term {line-height:1.6}
+.bank-prose h2,.bank-side h2 {font-size:1.32rem;margin-bottom:9px}
+.bank-prose h3 {font-size:1.04rem;margin:18px 0 5px}
+.bank-prose p {white-space:pre-line}
+.bank-prose li+li {margin-top:8px}
+.bank-prose ol {padding-left:1.35rem}
+.bank-prose summary,.bank-side summary {cursor:pointer}
+.bank-prose details,.bank-side details {padding:12px 0;border-top:1px solid #e2e9e3;margin-top:12px}
+.bank-prose details>p,.bank-side details>p {margin-top:10px}
+.bank-side>a {display:flex;gap:6px;align-items:center;color:#216246;border-top:1px solid #e2e9e3;font-weight:600;padding:10px 0;line-height:1.45}
+.bank-side code,.bank-schema code {overflow-wrap:anywhere;font-size:.9rem}
+.bank-side details {margin:0;padding:9px 0}
+.bank-side h2 {margin-bottom:12px}
+.bank-note {background:#edf4e9;border-left:3px solid #4e8258;border-radius:0 8px 8px 0;padding:13px 17px;margin:16px 0;color:#2e503a}
+.bank-note p {margin-top:3px}
+.bank-shelf {margin:25px 0}
+.bank-shelf>h2 {margin-bottom:12px}
+.bank-source h3 {font-size:1.08rem;line-height:1.4;margin-bottom:7px}
+.bank-source h3 a {align-items:baseline;display:inline}
+.bank-source h3 svg {vertical-align:middle}
+.bank-filters {display:grid;grid-template-columns:minmax(190px,1fr) minmax(190px,auto);gap:12px;align-items:end}
+.bank-filters .termsearch {margin:0;max-width:none;min-width:0;height:46px;background:#fff}
+.bank-select {display:flex;align-items:center;gap:8px;justify-content:end;color:#465b4e}
+.bank-select select {height:46px;width:100%;max-width:25rem;padding:0 38px 0 12px;color:#294535;border:1px solid #cddacc;border-radius:9px;appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='14'%3E%3Cpath d='m3 5 5 5 5-5' fill='none' stroke='%23465b4e' stroke-width='1.7'/%3E%3C/svg%3E") no-repeat right 12px center}
+.bank-result-count {color:#4e6456;font-size:.9rem;margin:13px 0}
+.bank-english {color:#377357;font-weight:650;margin:-4px 0 10px}
+.bank-example {background:#f2f6f0;border-radius:7px;color:#344e3d;margin:12px 0 0;padding:10px 12px;font-size:.94rem}
+.bank-example strong {display:block;font-size:.85rem}
+.bank-term>.bank-ext {margin-top:12px;font-size:.875rem}
+.bank-more {margin:18px auto}
+.bank-actions,.bank-counts {display:flex;align-items:center;gap:8px 12px;flex-wrap:wrap}
+.bank-actions {margin:14px 0 2px}
+.bank-actions .download {margin:0}
+.bank-counts {gap:12px 22px;margin:18px 0;padding:12px 0;border-block:1px solid #e0e8e0;color:#465e50}
+.bank-counts b {font-size:1.22rem;color:#1c5137;margin-right:3px}
+.bank-prose .bank-schema {padding:0;border:1px solid #dbe4db;border-radius:8px;margin:8px 0;background:#fcfdfa}
+.bank-schema>summary {padding:11px 14px;display:flex;align-items:center;gap:8px;justify-content:space-between;font-weight:650}
+.bank-schema>summary::before {content:'+';color:#2e6a4d}
+.bank-schema[open]>summary::before {content:'−'}
+.bank-schema>summary::-webkit-details-marker {display:none}
+.bank-schema>summary>span:first-of-type {flex:1;min-width:0}
+.bank-schema small,.bank-cases small {display:block;font-weight:400;color:#506358;font-size:.94rem}
+.bank-schema>summary>span:last-child {white-space:nowrap;color:#41614b;font-size:.875rem}
+.bank-schema-body {padding:2px 14px 14px}
+.bank-schema .tablewrap,.bank-query-result .tablewrap {max-width:100%;overflow-x:auto}
+.bank-schema .tablewrap td:first-child {overflow-wrap:normal}
+.bank-cases a {display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #e1e8df;padding:13px 4px}
+.bank-cases a strong {color:#19563b}
+.bank-cases small {margin-top:4px}
+.bank-public figure {margin:16px 0;background:#f4f7f2;padding:16px 18px 10px;border-radius:9px}
+.bank-public figcaption,.bank-axis {font-size:.86rem;color:#46624f}
+.bank-bars {margin-top:14px;height:115px;border-bottom:1px solid #92a699;display:grid;grid-template-columns:repeat(17,minmax(0,1fr));align-items:end;gap:clamp(3px,1vw,13px);background:repeating-linear-gradient(to top,transparent 0 calc(20% - 1px),#dfe8df calc(20% - 1px) 20%)}
+.bank-bars div {height:var(--bar);background:#468267;border-radius:3px 3px 0 0}
+.bank-bars div:last-child {background:#18593d}
+.bank-axis {display:flex;justify-content:space-between;margin-top:4px}
+.bank-code-label {display:block;margin:15px 0 5px;font-weight:650}
+#bank-query {display:block;width:100%;min-height:165px;resize:vertical;padding:14px;border:1px solid #b9cabb;border-radius:9px;background:#f4f7f2;color:#183528;font: .93rem/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre}
+.bank-query-result {margin-top:13px;overflow-wrap:anywhere}
+.bank-query-result:empty {margin:0}
+.bank-query-result p {font-weight:650;color:#345b42}
+@media(max-width:1250px){.bank-shortcuts {grid-template-columns:repeat(2,minmax(0,1fr))}.bank-lesson-grid,.bank-terms,.bank-source-grid {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.bank-columns {grid-template-columns:1fr}.bank-select {justify-content:start}.bank-tabs {gap:1px}.bank-tabs a {padding:9px;font-size:.9rem}.bank-filters {grid-template-columns:1fr}.bank-select select {max-width:none}.bank-select span {white-space:nowrap}}
+@media(max-width:570px){.bank-lesson-grid,.bank-terms,.bank-source-grid {grid-template-columns:1fr}.bank-shortcuts {gap:7px}.bank-shortcuts a {align-items:start;flex-direction:column;padding:11px;gap:8px}.bank-heading p {font-size:1rem}.bank-heading {margin-bottom:15px}.bank-tabs {display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.bank-schema>summary {gap:6px}.bank-lesson,.bank-term,.bank-source {padding:16px}.bank-schema-body {padding-inline:8px}}

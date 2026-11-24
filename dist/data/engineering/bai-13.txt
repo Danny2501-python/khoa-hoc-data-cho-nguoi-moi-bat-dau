@@ -1,0 +1,22 @@
+Giải thích sai lệch từ nguồn đến dashboard
+
+Mở đầu bằng business date, grain và định nghĩa KPI. Chỉ ra checkpoint phát sinh sai lệch, phân loại nguyên nhân và nêu tiêu chí nghiệm thu. Khi trình bày tiếng Anh, dùng con số cụ thể và diễn giải cách kiểm tra có thể lặp lại.
+
+THỰC HÀNH
+
+Chạy truy vấn số kiểm soát. Trong 90 giây, giải thích bằng tiếng Anh vì sao ngày 20 có chênh lệch 130.000 VND.
+
+VIDEO
+
+https://www.youtube.com/watch?v=vZndrBBPiQc
+
+TỰ KIỂM TRA
+
+Thông tin nào nên xác định trước khi JOIN?
+Đáp án: Grain của hai bảng
+
+Nguyên nhân nào tạo chênh lệch 130.000 VND?
+Đáp án: 80.000 trùng và 50.000 không có tài khoản
+
+Bằng chứng nào phù hợp để bảo vệ kết luận?
+Đáp án: Số kiểm soát từng tầng theo business_date

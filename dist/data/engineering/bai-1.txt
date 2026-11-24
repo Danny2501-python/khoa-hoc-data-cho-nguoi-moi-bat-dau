@@ -1,0 +1,22 @@
+Đọc dữ liệu theo schema
+
+Mở tệp bằng csv.DictReader và chuyển amount_vnd sang int trước khi cộng. Dùng set để phát hiện transaction_id đã xuất hiện và dict để tra account_id. Nếu hai dòng cùng khóa có nội dung khác nhau, cách ly để điều tra. Khi dữ liệu quá lớn cho bộ nhớ, chuyển bước kiểm trùng sang staging có chỉ mục.
+
+THỰC HÀNH
+
+Đổi ngày lọc ở dòng cuối thành 2026-11-21. Đáp án là 1 giao dịch và 30.000 VND.
+
+VIDEO
+
+https://www.youtube.com/watch?v=q5uM4VKywbA
+
+TỰ KIỂM TRA
+
+Dùng cấu trúc nào để tra tài khoản theo mã?
+Đáp án: dict theo account_id
+
+Hai giao dịch cùng mã nhưng khác số tiền cần xử lý thế nào?
+Đáp án: Cách ly và kiểm tra xung đột
+
+Bản ghi A99 hợp lệ về định dạng nhưng thiếu gì?
+Đáp án: Tham chiếu tới tài khoản

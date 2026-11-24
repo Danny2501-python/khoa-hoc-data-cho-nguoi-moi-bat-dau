@@ -1,0 +1,22 @@
+Chart, values và manifest
+
+Chart đóng gói tài nguyên Kubernetes dưới dạng template. Values điền tham số theo môi trường. Render manifest trước để kiểm image tag, lịch và tài nguyên. Giữ bí mật trong hệ thống quản lý bí mật và chỉ tham chiếu tên Secret trong cấu hình.
+
+THỰC HÀNH
+
+Chọn values cho dev hoặc prod để render phần CronJob và so sánh lịch, image tag.
+
+VIDEO
+
+https://www.youtube.com/watch?v=-ykwb1d0DXU
+
+TỰ KIỂM TRA
+
+helm template dùng để làm gì?
+Đáp án: Render manifest cấu hình
+
+Tệp nào thường chứa giá trị cấu hình đầu vào?
+Đáp án: values.yaml
+
+Mật khẩu nên lấy theo cách nào?
+Đáp án: Tham chiếu Secret đã quản lý

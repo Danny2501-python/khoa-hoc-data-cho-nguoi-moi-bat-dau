@@ -1,0 +1,22 @@
+DAG, retry và backfill
+
+Lập DAG ingest → validate → load → reconcile. Retry chạy lại task thất bại trong cùng kỳ xử lý. Backfill chạy các kỳ lịch sử. Dùng khóa batch và ghi đích theo cách idempotent để tránh kết quả bị nhân đôi khi mất phản hồi sau commit.
+
+THỰC HÀNH
+
+Chọn kịch bản lỗi load lần đầu, đọc log retry, sau đó thay chiến lược ghi để quan sát sự khác biệt khi chạy lại.
+
+VIDEO
+
+https://www.astronomer.io/events/webinars/intro-to-airflow-video/
+
+TỰ KIỂM TRA
+
+Backfill giải quyết việc gì?
+Đáp án: Xử lý lại các kỳ lịch sử
+
+Khi validate thất bại, task load nên xử lý thế nào?
+Đáp án: Chờ điều kiện phụ thuộc đạt
+
+Cách nào giảm rủi ro trùng khi retry sau commit?
+Đáp án: Ghi idempotent theo khóa batch và giao dịch

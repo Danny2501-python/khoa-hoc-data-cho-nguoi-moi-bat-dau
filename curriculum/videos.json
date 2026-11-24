@@ -1,0 +1,334 @@
+{
+ "sql": {
+  "id": "PLyxSzL3F7484deka_j1czssCiHygV6oF-",
+  "title": "Khóa học SQL Server cho người mới (2023)",
+  "items": [
+   [
+    "kQRpe1HkALE",
+    "Khóa Học SQL Server - Bài 01. Hướng dẫn cài đặt SQL Server 2022",
+    "6:47"
+   ],
+   [
+    "r_eh79UMBiw",
+    "Khóa Học SQL Server - Bài 02. Hướng dẫn cài đặt SSMS   SQL Server Management System",
+    "6:42"
+   ],
+   [
+    "z8tme072AI0",
+    "Khóa Học SQL Server - Bài 03. Chuẩn bị cơ sở dữ liệu để thực hành câu lệnh SQL",
+    "6:10"
+   ],
+   [
+    "KPdxLcbHlso",
+    "Khóa Học SQL Server - Bài 04. Câu lệnh truy vấn SELECT",
+    "22:00"
+   ],
+   [
+    "kBlWiIjLTGM",
+    "Khóa Học SQL Server - Bài 05. Câu lệnh truy vấn SELECT DISTINCT lấy dữ liệu không trùng lặp",
+    "14:35"
+   ],
+   [
+    "dVdUfKasuFw",
+    "Khóa Học SQL Server - Bài 06. Câu lệnh truy vấn SELECT TOP giới hạn dòng trả về",
+    "13:08"
+   ],
+   [
+    "N2XW4z41o3s",
+    "Khóa Học SQL Server - Bài 07. Cách đặt tên thay thế cho cột và bảng   Alias",
+    "20:20"
+   ],
+   [
+    "XppBnms3aAk",
+    "Khóa Học SQL Server - Bài 08. Tìm giá trị Min và Max trong SQL",
+    "17:14"
+   ],
+   [
+    "4ZZdNoqpyOA",
+    "Khóa Học SQL Server - Bài 09. Các hàm COUNT, SUM và AVG trong SQL",
+    "23:45"
+   ],
+   [
+    "-ktCGe8l5AE",
+    "Khóa Học SQL Server - Bài 10. Order By   Sắp xếp kết quả trả về của câu truy vấn",
+    "22:20"
+   ],
+   [
+    "njZ7PeRXVAs",
+    "Khóa Học SQL Server - Bài 11. Các phép toán trong SQL",
+    "15:43"
+   ],
+   [
+    "NKhIgdTN_DI",
+    "Khóa Học SQL Server - Bài 12. Lọc dữ liệu bằng mệnh đề WHERE trong SQL",
+    "20:30"
+   ],
+   [
+    "L2jfSQEzDN4",
+    "Khóa Học SQL Server - Bài 13. Kết hợp điều kiện bằng toán tử AND, OR, NOT trong SQL",
+    "18:07"
+   ],
+   [
+    "Pip_MX9Ldp0",
+    "Khóa Học SQL Server - Bài 14. Toán tử BETWEEN trong SQL",
+    "17:20"
+   ],
+   [
+    "AxcBqQTQmoY",
+    "Khóa Học SQL Server - Bài 15. Toán tử LIKE - lọc dữ liệu chuỗi trong SQL",
+    "12:54"
+   ],
+   [
+    "asekUscqyHM",
+    "Khóa Học SQL Server - Bài 16. WILDCARD - Ký tự đại diện trong SQL",
+    "16:54"
+   ],
+   [
+    "V0YCgdWtB8w",
+    "Khóa Học SQL Server - Bài 17. Lọc dữ liệu trong danh sách bằng toán tử IN trong SQL",
+    "14:25"
+   ],
+   [
+    "N-mSlsOJsLI",
+    "Khóa Học SQL Server - Bài 18. Kiểm tra dữ liệu NULL trong SQL",
+    "9:59"
+   ],
+   [
+    "oKGNPrTxqeY",
+    "Khóa Học SQL Server - Bài 19.  GROUP BY - Nhóm dữ liệu trong SQL",
+    "15:20"
+   ],
+   [
+    "0NbfYl3j1h4",
+    "Khóa Học SQL Server - Bài 20. Các hàm về ngày - tháng - năm trong SQL Server",
+    "14:35"
+   ],
+   [
+    "-dty43hPZHk",
+    "Khóa Học SQL Server - Bài 21. HAVING - Lọc dữ liệu sau GROUP BY",
+    "21:57"
+   ],
+   [
+    "CrQKLsmkskY",
+    "Khóa Học SQL Server - Bài 22. Bài tập ôn tập câu lệnh SQL",
+    "27:39"
+   ],
+   [
+    "PPugHj0fGCI",
+    "Khóa Học SQL Server - Bài 23. Truy vấn dữ liệu từ nhiều table",
+    "36:23"
+   ],
+   [
+    "-yCS98FI0aY",
+    "Khóa Học SQL Server - Bài 24. Bài tập truy vấn dữ liệu từ nhiều Table khác nhau",
+    "19:24"
+   ],
+   [
+    "Vzs9PIjcVGQ",
+    "Khóa Học SQL Server - Bài 25. Câu lệnh Union - Kết hợp các kết quả",
+    "35:45"
+   ],
+   [
+    "aSMB2wOzO0M",
+    "Khóa Học SQL Server - Bài 26. Các câu lênh JOIN - LEFT JOIN - RIGHT JOIN - FULL JOIN",
+    "32:22"
+   ],
+   [
+    "d6AGlzg12eQ",
+    "Khóa Học SQL Server - Bài 27. Bài tập về các câu lệnh JOIN",
+    "18:42"
+   ],
+   [
+    "_35HCggiJ7M",
+    "Khóa Học SQL Server - Bài 28. Sub Query | Nested Query - Truy vấn con, truy vấn lồng nhau",
+    "26:27"
+   ],
+   [
+    "i4vHkXWKILg",
+    "Khóa Học SQL Server - Bài 29.  Bài tập Sub Query - truy vấn con, truy vấn lồng nhau",
+    "14:33"
+   ],
+   [
+    "1aCI9rVWSPc",
+    "Khóa Học SQL Server - Bài 30. Thứ tự thực thi trong câu truy vấn SQL",
+    "16:52"
+   ],
+   [
+    "pLxbHgJVnW0",
+    "Khóa Học SQL Server - Bài 31. Nâng cao hiệu suất truy vấn SQL với Common Table Expression (CTE)",
+    "48:16"
+   ],
+   [
+    "SmvIyDpjPT0",
+    "Khóa Học SQL Server - Bài 32. Cách xây dựng câu truy vấn đệ quy",
+    "37:04"
+   ],
+   [
+    "uXPn7w_RlfY",
+    "Khóa Học SQL Server - Bài 33. Windows Functions và các ứng dụng",
+    "30:25"
+   ],
+   [
+    "JWeQko-XA2A",
+    "Học SQL Server - Bài 34. Phân biệt các nhóm lệnh trong SQL",
+    "25:35"
+   ],
+   [
+    "_dkjfsl_gjI",
+    "Học SQL Server 35. Cách tạo mới cơ sở dữ liệu",
+    "11:38"
+   ],
+   [
+    "ObxlvTFdckw",
+    "Học SQL Server - Bài 36. Cách tạo, thay đổi cấu trúc và xóa Table",
+    "38:56"
+   ],
+   [
+    "S6VUD6oG_KM",
+    "Học SQL Server - Bài 37. Lưu ý về kiểu dữ liệu",
+    "20:49"
+   ],
+   [
+    "rOBAoIEHteY",
+    "Học SQL Server - Bài 38. Câu lệnh INSERT INTO thêm dữ liệu vào bảng",
+    "18:56"
+   ],
+   [
+    "aEr2dliuVA8",
+    "Học SQL Server - Bài 39. Câu lệnh SELECT INTO copy dữ liệu và tạo bảng mới",
+    "19:33"
+   ],
+   [
+    "41JilWC5SBY",
+    "Học SQL Server - Bài 40. Câu lệnh DELETE xóa dữ liệu trong bảng",
+    "12:26"
+   ],
+   [
+    "WO7EmrJbB3o",
+    "Học SQL Server - Bài 41. Câu lệnh UPDATE cập nhật dữ liệu",
+    "12:14"
+   ],
+   [
+    "0Ol6b3q5z8k",
+    "Học SQL Server - Bài 42. Index trong cơ sở dữ liệu",
+    "49:53"
+   ],
+   [
+    "RVxcwOKMCNE",
+    "Học SQL Server - Bài 43. View trong cơ sở dữ liệu",
+    "22:21"
+   ],
+   [
+    "qtk2FYf5ghc",
+    "Học SQL Server - Bài 44. Giới thiệu về T SQL 1",
+    "11:54"
+   ],
+   [
+    "7nReuUzyqP0",
+    "Học SQL Server - Bài 45. Stored Procedures trong SQL Server",
+    "42:43"
+   ],
+   [
+    "AkAGhHTLRcs",
+    "Học SQL Server - Bài 46. Triggers trong SQL Server",
+    "49:55"
+   ],
+   [
+    "wtGOsoFzU_I",
+    "Học SQL Server - Bài 47. Triển khai cơ sở dữ liệu trên nền tảng Microsoft Azure",
+    "59:39"
+   ]
+  ]
+ },
+ "bi": {
+  "id": "PLbM4yZFMwzMDocX8lYUF0dy7kx8IQu0jK",
+  "title": "Tự học Power BI chuẩn theo chứng chỉ PL-300 của Microsoft",
+  "items": [
+   [
+    "IiVEJN7cL1Q",
+    "PL-300 - Lab 0: Làm quen với Data Analysis và Power BI",
+    "27:22"
+   ],
+   [
+    "dkzaWBxB0vA",
+    "PL-300 - Lab 1: Chuẩn bị dữ liệu trong Power BI",
+    "8:49"
+   ],
+   [
+    "crlt8LNbc6E",
+    "PL-300 - Lab 2: Làm sạch và chuyển đổi dữ liệu trong Power BI Desktop",
+    "23:32"
+   ],
+   [
+    "VAoKln3O0hM",
+    "PL-300 - Lab 3: Xây dựng Data Model trong Power BI (Phần 1)",
+    "20:08"
+   ],
+   [
+    "fb0oNFE0fLQ",
+    "PL-300 -  Lab 3 Nâng cao: Xây dựng Data Model trong Power BI (Phần 2)",
+    "10:52"
+   ],
+   [
+    "cCE_J0bmgJ4",
+    "PL-300 -  Lab 4: Tạo các DAX measure trong Power BI",
+    "26:32"
+   ],
+   [
+    "DsUPvP8it68",
+    "PL-300 - Lab 5 (Phần 3): Tạo các phép tính DAX nâng cao",
+    "20:01"
+   ],
+   [
+    "pb3DjX_hgac",
+    "PL-300 - Lab 5 (Phần 1): Hiểu về Filter Context trong Power BI",
+    "45:00"
+   ],
+   [
+    "d90XhZj9XTg",
+    "PL-300 - Lab 5 (Phần 2): Hiểu về pattern DAX & Row Context trong Power BI",
+    "41:23"
+   ],
+   [
+    "HlXPiP0YioU",
+    "PL-300 - Lab 6: Thiết kế báo cáo trong Power BI phần 1",
+    "18:37"
+   ],
+   [
+    "LJ9h6fdG6XM",
+    "PL-300 - Lab 7: Thiết kế báo cáo trong Power BI Desktop",
+    "16:50"
+   ],
+   [
+    "TedUJQJ__sQ",
+    "PL-300 - Lab 8: Phân tích dữ liệu nâng cao trong Power BI",
+    "5:37"
+   ],
+   [
+    "Y1hj-Pw_FMM",
+    "PL-300 - Lab 9: Tạo dashboard trên Power BI",
+    "6:10"
+   ],
+   [
+    "ZtTiwK5FTdw",
+    "PL-300 - Lab 10: Cài đặt Row-Level Security trong Power BI",
+    "5:23"
+   ],
+   [
+    "qWc9ogLkl4c",
+    "Mẹo thiết kế layout giúp Power BI report xịn như dân chuyên – Sub ngay để học thêm nhé! 🎨",
+    "1:02"
+   ],
+   [
+    "wvG7bW7EHHs",
+    "Tooltip trong Power BI – Thêm info chứ không thêm rối! Sub kênh để học thêm mẹo hay nha! 💡",
+    "0:55"
+   ],
+   [
+    "6QKGOm6lh7Q",
+    "Tidy Data trước khi làm báo cáo – Sub kênh để học thêm mẹo xử lý dữ liệu nha! 📊",
+    "1:01"
+   ]
+  ]
+ }
+}

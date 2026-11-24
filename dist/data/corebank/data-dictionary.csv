@@ -1,0 +1,33 @@
+﻿table_name,natural_grain,table_key,column_name,sqlite_type,description
+customer,Mỗi dòng là một hồ sơ khách hàng giả lập.,cif_id,cif_id,TEXT,Khóa hồ sơ khách hàng giả lập; một CIF có thể sở hữu nhiều tài khoản.
+customer,Mỗi dòng là một hồ sơ khách hàng giả lập.,cif_id,segment,TEXT,RETAIL là khách hàng cá nhân; SME là doanh nghiệp vừa và nhỏ.
+customer,Mỗi dòng là một hồ sơ khách hàng giả lập.,cif_id,home_branch,TEXT,Mã chi nhánh quản lý hồ sơ trong bài tập.
+account,Mỗi dòng là một tài khoản CASA gửi lệnh chuyển tiền.,account_id,account_id,TEXT,Khóa tài khoản giả lập.
+account,Mỗi dòng là một tài khoản CASA gửi lệnh chuyển tiền.,account_id,cif_id,TEXT,CIF sở hữu tài khoản. Mô hình giả định mỗi tài khoản có một chủ.
+account,Mỗi dòng là một tài khoản CASA gửi lệnh chuyển tiền.,account_id,currency,TEXT,"Đơn vị tiền của tài khoản, toàn bộ là VND."
+account,Mỗi dòng là một tài khoản CASA gửi lệnh chuyển tiền.,account_id,opening_vnd,INTEGER,"Số dư sổ sách đầu ngày 04/05/2026 trước mọi phát sinh, đơn vị đồng."
+payment_order,Mỗi dòng là một lệnh chuyển tiền đi do kênh tạo.,order_id,order_id,TEXT,Khóa nghiệp vụ xuyên suốt từ kênh đến quyết toán.
+payment_order,Mỗi dòng là một lệnh chuyển tiền đi do kênh tạo.,order_id,account_id,TEXT,Tài khoản nguồn bị ghi Nợ.
+payment_order,Mỗi dòng là một lệnh chuyển tiền đi do kênh tạo.,order_id,channel,TEXT,"Kênh nhận lệnh: APP, WEB hoặc TELLER."
+payment_order,Mỗi dòng là một lệnh chuyển tiền đi do kênh tạo.,order_id,submitted_at,TEXT,"Thời điểm tạo lệnh, giờ Việt Nam, dạng YYYY-MM-DD HH:MM:SS."
+payment_order,Mỗi dòng là một lệnh chuyển tiền đi do kênh tạo.,order_id,amount_vnd,INTEGER,"Số tiền khách hàng yêu cầu chuyển, đồng nguyên, chưa có phí."
+hub_attempt,Mỗi dòng là kết quả một lần Payment Hub xử lý cùng một lệnh; một lệnh có thể được thử lại.,"(order_id, attempt_no)",order_id,TEXT,Khóa nối về lệnh ở kênh.
+hub_attempt,Mỗi dòng là kết quả một lần Payment Hub xử lý cùng một lệnh; một lệnh có thể được thử lại.,"(order_id, attempt_no)",attempt_no,INTEGER,"Số thứ tự lần thử, bắt đầu từ 1; số lớn nhất là kết quả sau cùng."
+hub_attempt,Mỗi dòng là kết quả một lần Payment Hub xử lý cùng một lệnh; một lệnh có thể được thử lại.,"(order_id, attempt_no)",observed_at,TEXT,"Thời điểm nhận kết quả của lần thử, giờ Việt Nam."
+hub_attempt,Mỗi dòng là kết quả một lần Payment Hub xử lý cùng một lệnh; một lệnh có thể được thử lại.,"(order_id, attempt_no)",status,TEXT,TIMEOUT: chưa nhận phản hồi; ACCEPTED: Hub chấp nhận; REJECTED: từ chối lệnh.
+core_posting,Mỗi dòng là một lần Core ghi Nợ tài khoản tiền gửi cho lệnh đi.,posting_id,posting_id,TEXT,Khóa bút toán ở sổ chi tiết Core.
+core_posting,Mỗi dòng là một lần Core ghi Nợ tài khoản tiền gửi cho lệnh đi.,posting_id,order_id,TEXT,Lệnh gốc ở kênh. Nhiều lần ghi Nợ cho một lệnh là ngoại lệ trong mô hình.
+core_posting,Mỗi dòng là một lần Core ghi Nợ tài khoản tiền gửi cho lệnh đi.,posting_id,booked_at,TEXT,"Thời điểm hạch toán tại Core, giờ Việt Nam."
+core_posting,Mỗi dòng là một lần Core ghi Nợ tài khoản tiền gửi cho lệnh đi.,posting_id,debit_vnd,INTEGER,"Số tiền Core trừ khỏi tài khoản khách hàng, ghi số dương theo đơn vị đồng."
+gl_line,Mỗi dòng là một vế của bút toán GL gắn với một lần hạch toán Core.,"(posting_id, line_no)",posting_id,TEXT,Khóa nối về lần ghi sổ chi tiết.
+gl_line,Mỗi dòng là một vế của bút toán GL gắn với một lần hạch toán Core.,"(posting_id, line_no)",line_no,INTEGER,Thứ tự dòng của bút toán trong bài.
+gl_line,Mỗi dòng là một vế của bút toán GL gắn với một lần hạch toán Core.,"(posting_id, line_no)",gl_code,TEXT,"Mã minh họa: DEP_CASA = tiền gửi khách hàng, PAY_CLEAR = phải trả chờ quyết toán, SUSPENSE = tài khoản treo."
+gl_line,Mỗi dòng là một vế của bút toán GL gắn với một lần hạch toán Core.,"(posting_id, line_no)",side,TEXT,"Phía ngân hàng: DR = Nợ, CR = Có."
+gl_line,Mỗi dòng là một vế của bút toán GL gắn với một lần hạch toán Core.,"(posting_id, line_no)",amount_vnd,INTEGER,"Số tiền dương của vế bút toán, đơn vị đồng."
+settlement_line,Mỗi dòng là một lệnh mà đối tác xác nhận đã quyết toán.,settlement_id,settlement_id,TEXT,"Mã dòng trên bảng kê bên ngoài, độc lập với posting_id."
+settlement_line,Mỗi dòng là một lệnh mà đối tác xác nhận đã quyết toán.,settlement_id,order_id,TEXT,Mã tham chiếu lệnh gốc để ghép hai phía.
+settlement_line,Mỗi dòng là một lệnh mà đối tác xác nhận đã quyết toán.,settlement_id,settled_on,TEXT,"Ngày ghi nhận trên bảng kê của đối tác, theo ngày địa phương."
+settlement_line,Mỗi dòng là một lệnh mà đối tác xác nhận đã quyết toán.,settlement_id,amount_vnd,INTEGER,"Số tiền đối tác ghi nhận đã quyết toán, đơn vị đồng."
+eod_balance,Mỗi dòng là số dư sổ sách của một tài khoản cuối một ngày.,"(account_id, as_of_date)",account_id,TEXT,Tài khoản trong bảng account.
+eod_balance,Mỗi dòng là số dư sổ sách của một tài khoản cuối một ngày.,"(account_id, as_of_date)",as_of_date,TEXT,Ngày chốt sau các lần Core ghi Nợ trong ngày.
+eod_balance,Mỗi dòng là số dư sổ sách của một tài khoản cuối một ngày.,"(account_id, as_of_date)",closing_vnd,INTEGER,"Số dư sổ sách cuối ngày trích từ hệ thống đích, dùng để hậu kiểm, đơn vị đồng."

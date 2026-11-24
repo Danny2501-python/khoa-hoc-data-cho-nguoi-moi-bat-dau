@@ -1,0 +1,22 @@
+Nhóm dữ liệu theo ngày nghiệp vụ
+
+Dùng readtable để giữ tên cột. Dùng groupsummary(T,'business_date','sum','amount_vnd') rồi đối chiếu tên cột kết quả trước khi vẽ. So sánh tổng thô và tổng đã chuẩn hóa giúp nhận diện ảnh hưởng của bản lặp và bản ghi thiếu tài khoản.
+
+THỰC HÀNH
+
+Đổi giữa dữ liệu thô và đã chuẩn hóa, quan sát chênh lệch ngày 20. Mô phỏng dùng phép nhóm tương đương groupsummary.
+
+VIDEO
+
+https://www.mathworks.com/videos/getting-started-with-matlab-68985.html
+
+TỰ KIỂM TRA
+
+readtable phù hợp khi dữ liệu có đặc điểm nào?
+Đáp án: Nhiều cột với kiểu khác nhau và tên cột
+
+Muốn tính tổng tiền mỗi ngày, nhóm theo cột nào?
+Đáp án: business_date
+
+Ngày 20 chênh bao nhiêu giữa tổng thô và tổng sạch?
+Đáp án: 130.000 VND

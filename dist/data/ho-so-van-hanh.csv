@@ -1,0 +1,25 @@
+﻿MaHS,NgayNhan,Tuan,ChiNhanh,NghiepVu,TrangThai,XuLyPhut,SLAPhut,LyDoTre
+HS001,2026-11-02,1,Hà Nội,Chuyển tiền,Đã đóng,12,30,
+HS002,2026-11-02,1,Đà Nẵng,Hồ sơ thẻ,Đã đóng,45,60,
+HS003,2026-11-03,1,Hà Nội,Hồ sơ thẻ,Đã đóng,83,60,Thiếu chứng từ
+HS004,2026-11-03,1,Cần Thơ,Chuyển tiền,Đã đóng,30,30,
+HS005,2026-11-04,1,Đà Nẵng,Chuyển tiền,Đã đóng,18,30,
+HS006,2026-11-04,1,Cần Thơ,Hồ sơ thẻ,Đã đóng,48,60,
+HS007,2026-11-05,1,Hà Nội,Chuyển tiền,Đã đóng,25,30,
+HS008,2026-11-05,1,Cần Thơ,Chuyển tiền,Đã đóng,42,30,Lỗi hệ thống
+HS009,2026-11-06,1,Đà Nẵng,Hồ sơ thẻ,Đã đóng,60,60,
+HS010,2026-11-06,1,Hà Nội,Hồ sơ thẻ,Đã đóng,36,60,
+HS011,2026-11-06,1,Đà Nẵng,Chuyển tiền,Đang xử lý,,30,
+HS012,2026-11-06,1,Cần Thơ,Hồ sơ thẻ,Đang xử lý,,60,
+HS013,2026-11-09,2,Hà Nội,Hồ sơ thẻ,Đã đóng,95,60,Thiếu chứng từ
+HS014,2026-11-09,2,Cần Thơ,Chuyển tiền,Đã đóng,24,30,
+HS015,2026-11-10,2,Đà Nẵng,Chuyển tiền,Đã đóng,22,30,
+HS016,2026-11-10,2,Hà Nội,Hồ sơ thẻ,Đã đóng,78,60,Thiếu chứng từ
+HS017,2026-11-11,2,Cần Thơ,Hồ sơ thẻ,Đã đóng,55,60,
+HS018,2026-11-11,2,Đà Nẵng,Chuyển tiền,Đã đóng,38,30,Lỗi hệ thống
+HS019,2026-11-12,2,Cần Thơ,Chuyển tiền,Đã đóng,16,30,
+HS020,2026-11-12,2,Đà Nẵng,Hồ sơ thẻ,Đã đóng,43,60,
+HS021,2026-11-13,2,Hà Nội,Hồ sơ thẻ,Đã đóng,74,60,Thiếu chứng từ
+HS022,2026-11-13,2,Hà Nội,Chuyển tiền,Đã đóng,28,30,
+HS023,2026-11-13,2,Đà Nẵng,Hồ sơ thẻ,Đang xử lý,,60,
+HS024,2026-11-13,2,Cần Thơ,Chuyển tiền,Đang xử lý,,30,

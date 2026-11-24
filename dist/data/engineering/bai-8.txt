@@ -1,0 +1,22 @@
+Catalog và lineage ở cấp lần chạy
+
+Catalog mô tả dataset, owner, schema và SLA. Lineage kết nối dataset đầu vào, job và dataset đầu ra. Lưu business_date và run_id để truy vết khi báo cáo lệch, đồng thời ghi các số kiểm soát để biết sai lệch phát sinh ở tầng nào.
+
+THỰC HÀNH
+
+Chọn cột bị lệch để xem đường đi và audit tương ứng. Viết thêm mô tả owner và nguồn cho KPI trong catalog.
+
+VIDEO
+
+https://www.youtube.com/watch?v=uIuBBp3Ib64
+
+TỰ KIỂM TRA
+
+Run ID dùng để làm gì?
+Đáp án: Phân biệt các lần thực thi
+
+Thông tin nào phù hợp với catalog?
+Đáp án: Owner, schema và SLA
+
+Lineage cấp cột hữu ích khi nào?
+Đáp án: Truy ngược một KPI về các cột nguồn

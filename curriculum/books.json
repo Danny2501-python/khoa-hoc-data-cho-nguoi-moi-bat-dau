@@ -1,0 +1,326 @@
+[
+ [
+  "excel",
+  "The Microsoft Office 365 Bible",
+  "Leonard K. Holmes",
+  123,
+  "Excel, thao tác bảng tính, công thức, PivotTable và cách trình bày. Chương Excel nằm ở trang PDF 22–29.",
+  "https://support.microsoft.com/en-us/excel/",
+  "Microsoft · Hướng dẫn Excel",
+  [
+   [
+    22,
+    "Mở bảng tính"
+   ],
+   [
+    25,
+    "Công thức"
+   ],
+   [
+    28,
+    "Phân tích và biểu đồ"
+   ],
+   [
+    30,
+    "Trình bày PowerPoint"
+   ]
+  ]
+ ],
+ [
+  "sql",
+  "Learning SQL",
+  "Alan Beaulieu · Ấn bản 3",
+  380,
+  "Tập trung truy vấn, lọc, nhóm và nối. Sách minh họa bằng MySQL; các ví dụ trong bài đã được viết cho SQLite trên web.",
+  "https://sqlite.org/lang_select.html",
+  "SQLite · Tài liệu SELECT",
+  [
+   [
+    63,
+    "Khung truy vấn"
+   ],
+   [
+    85,
+    "Lọc dòng"
+   ],
+   [
+    105,
+    "Nối bảng"
+   ],
+   [
+    165,
+    "Nhóm và tổng hợp"
+   ],
+   [
+    219,
+    "Logic điều kiện"
+   ]
+  ]
+ ],
+ [
+  "pandas",
+  "Python for Data Analysis",
+  "Wes McKinney · Ấn bản 2",
+  541,
+  "Thực hành notebook, đọc CSV, làm sạch, ghép và tổng hợp. Trang đọc bên ngoài là ấn bản 3 mở của tác giả; số trang trên web học ứng với PDF ấn bản 2.",
+  "https://wesmckinney.com/book/",
+  "Tác giả · Đọc ấn bản 3 miễn phí",
+  [
+   [
+    33,
+    "IPython và Jupyter"
+   ],
+   [
+    141,
+    "Nhập môn pandas"
+   ],
+   [
+    185,
+    "Nhập và xuất"
+   ],
+   [
+    209,
+    "Làm sạch"
+   ],
+   [
+    239,
+    "Ghép bảng"
+   ],
+   [
+    305,
+    "Gom nhóm"
+   ]
+  ]
+ ],
+ [
+  "powerbi",
+  "Learning Microsoft Power BI",
+  "Jeremey Arnold · Bản xem trước",
+  31,
+  "Tệp có chương giới thiệu và trang mở đầu chương 2. Phần làm sạch, DAX và báo cáo chi tiết dùng các lab PL-300 và bài giảng trên web.",
+  "https://learn.microsoft.com/en-us/training/paths/data-analytics-microsoft/",
+  "Microsoft Learn · Học Power BI",
+  [
+   [
+    19,
+    "Giới thiệu"
+   ],
+   [
+    22,
+    "Power BI Desktop"
+   ],
+   [
+    27,
+    "Công cụ phân tích"
+   ],
+   [
+    31,
+    "Mở đầu chương 2"
+   ]
+  ]
+ ],
+ [
+  "tableau",
+  "Practical Tableau",
+  "Ryan Sleeper",
+  624,
+  "Dùng để chọn hình thức biểu đồ, thiết kế bộ lọc và dashboard. Có thể áp dụng các nguyên tắc vào Excel hoặc Power BI.",
+  "https://www.tableau.com/learn/training",
+  "Tableau · Video đào tạo",
+  [
+   [
+    51,
+    "Chiều và đại lượng"
+   ],
+   [
+    59,
+    "Biểu đồ thanh"
+   ],
+   [
+    63,
+    "Thời gian và biểu đồ đường"
+   ],
+   [
+    77,
+    "Bộ lọc"
+   ],
+   [
+    119,
+    "Dashboard"
+   ]
+  ]
+ ],
+ [
+  "finance",
+  "Python for Finance",
+  "Yves Hilpisch · 2014",
+  605,
+  "Chọn phần tổ chức chuỗi thời gian và nhập xuất dữ liệu để áp dụng cho báo cáo theo ngày. Các ví dụ notebook của khóa dùng dữ liệu giả lập.",
+  "https://github.com/yhilpisch/py4fi",
+  "Tác giả · Tài nguyên đi kèm sách",
+  [
+   [
+    126,
+    "Trực quan hóa"
+   ],
+   [
+    154,
+    "Chuỗi thời gian"
+   ],
+   [
+    190,
+    "Đọc và ghi dữ liệu"
+   ]
+  ]
+ ],
+ [
+  "ml",
+  "Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow",
+  "Aurélien Géron · Ấn bản 2",
+  851,
+  "Lấy các khái niệm nhãn, đặc trưng và tính đại diện của mẫu để đánh giá một đề xuất cảnh báo trễ hạn.",
+  "https://github.com/ageron/handson-ml2",
+  "Tác giả · Notebook ấn bản 2",
+  [
+   [
+    31,
+    "Tổng quan học máy"
+   ],
+   [
+    38,
+    "Học có giám sát"
+   ],
+   [
+    54,
+    "Chất lượng mẫu"
+   ],
+   [
+    60,
+    "Đánh giá mô hình"
+   ]
+  ]
+ ],
+ [
+  "cfa1",
+  "SchweserNotes · Book 1",
+  "Kaplan Schweser · CFA Level I 2022 · Quantitative Methods and Economics",
+  383,
+  "Tài liệu toán chính: kiểu dữ liệu, tần số, trung bình có trọng số, độ phân tán, xác suất có điều kiện và chọn mẫu.",
+  "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
+  "CFA Institute · Thông tin chương trình",
+  [
+   [
+    41,
+    "Dữ liệu và thống kê"
+   ],
+   [
+    55,
+    "Xu hướng trung tâm"
+   ],
+   [
+    61,
+    "Phân tán"
+   ],
+   [
+    78,
+    "Xác suất"
+   ],
+   [
+    126,
+    "Chọn mẫu"
+   ]
+  ]
+ ],
+ [
+  "cfa2",
+  "SchweserNotes · Book 2",
+  "Kaplan Schweser · CFA Level I 2022 · Financial Statement Analysis",
+  271,
+  "Đọc cách đặt và diễn giải tỷ số. Bài học vận dụng nguyên tắc thiết kế tử số, mẫu số vào KPI vận hành.",
+  "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
+  "CFA Institute · Thông tin chương trình",
+  [
+   [
+    59,
+    "Tài sản và nghĩa vụ"
+   ],
+   [
+    86,
+    "Dòng tiền"
+   ],
+   [
+    112,
+    "Tỷ số tài chính"
+   ]
+  ]
+ ],
+ [
+  "cfa3",
+  "SchweserNotes · Book 3",
+  "Kaplan Schweser · CFA Level I 2022 · Corporate Issuers and Equity Investments",
+  215,
+  "Chọn phần quản trị và bên liên quan để thiết kế trách nhiệm xác minh, điều phối và phê duyệt.",
+  "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
+  "CFA Institute · Thông tin chương trình",
+  [
+   [
+    12,
+    "Quản trị doanh nghiệp"
+   ],
+   [
+    15,
+    "Các bên liên quan"
+   ],
+   [
+    69,
+    "Cấu trúc vốn"
+   ]
+  ]
+ ],
+ [
+  "cfa4",
+  "SchweserNotes · Book 4",
+  "Kaplan Schweser · CFA Level I 2022 · Fixed Income, Derivatives, and Alternative Investments",
+  210,
+  "Phần đọc mở rộng về trường dữ liệu trái phiếu. Bài tập dùng mệnh giá, tỷ lệ coupon và mốc thanh toán giả lập.",
+  "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
+  "CFA Institute · Thông tin chương trình",
+  [
+   [
+    11,
+    "Đặc điểm trái phiếu"
+   ],
+   [
+    13,
+    "Kỳ hạn và tiền lãi"
+   ],
+   [
+    14,
+    "Điều khoản phát hành"
+   ]
+  ]
+ ],
+ [
+  "cfa5",
+  "SchweserNotes · Book 5",
+  "Kaplan Schweser · CFA Level I 2022 · Portfolio Management and Ethical and Professional Standards",
+  186,
+  "Chọn quản trị rủi ro, đạo đức và giới hạn của bằng chứng khi bàn giao kết quả.",
+  "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
+  "CFA Institute · Thông tin chương trình",
+  [
+   [
+    23,
+    "Rủi ro và lợi suất"
+   ],
+   [
+    89,
+    "Quản trị rủi ro"
+   ],
+   [
+    124,
+    "Đạo đức nghề nghiệp"
+   ]
+  ]
+ ]
+]

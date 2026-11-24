@@ -1,16 +1,30 @@
 # Khóa học Data cho người mới bắt đầu
 
-Lộ trình tự học tiếng Việt dành cho người mới làm quen với dữ liệu. Học cách đọc bảng, viết truy vấn, làm sạch dữ liệu và trình bày kết quả qua bài tập với dữ liệu giả lập.
+Lộ trình tự học tiếng Việt với Excel, SQL, Python và Power BI. Khóa học có bài đọc, video, quiz và bài thực hành trên dữ liệu mẫu.
 
-**[Bắt đầu học](https://datalabstudy.pages.dev/#start)** · [Lộ trình 100 ngày](https://datalabstudy.pages.dev/#roadmap) · [Phòng thực hành](https://datalabstudy.pages.dev/#labs)
+[Học trực tuyến](https://datalabstudy.pages.dev/#start) · [Lộ trình 100 ngày](https://datalabstudy.pages.dev/#roadmap) · [Kho Banking AI Mapping](https://datalabstudy.pages.dev/#mapping)
 
-| Chặng học | Bạn sẽ thực hành |
+## Chạy trên máy
+
+Từ thư mục repo, chạy:
+
+```sh
+python3 -m http.server 8000 --directory dist
+```
+
+Mở http://localhost:8000. Bạn có thể tạo bản HTML tải về bằng `python3 scripts/export_offline.py` hoặc mở trực tiếp khóa học qua link trên. Một số lab và video cần Internet.
+
+## Cấu trúc dự án
+
+| Thư mục | Nội dung |
 | --- | --- |
-| Excel và tư duy dữ liệu | Đọc bảng, lọc dữ liệu, kiểm tra số liệu và tính KPI |
-| SQL và Python | Truy vấn, ghép bảng, làm sạch dữ liệu và đối soát |
-| Power BI | Xây dựng mô hình, tạo báo cáo và kiểm tra chỉ số |
-| Học tiếp | Data Engineering, Master Data, Data Quality và AI & Prompt |
+| [dist/](dist/) | HTML, CSS và JavaScript của ứng dụng học |
+| [curriculum/](curriculum/) | Nội dung nền tảng, danh mục sách, ví dụ và video |
+| [dist/data/](dist/data/) | Tệp CSV, SQLite và dữ liệu bài thực hành |
+| [scripts/](scripts/) | Tạo học liệu, dữ liệu theo buổi và bản HTML ngoại tuyến |
 
-### Thử một bài thực hành
+Ứng dụng chạy trong trình duyệt. Lab SQL dùng SQLite trong Web Worker. Tiến độ lưu trong trình duyệt theo địa chỉ web đang mở.
 
-Mở [Kho dữ liệu Mapping](https://datalabstudy.pages.dev/#mapping), chọn nhóm CIF, rồi chạy truy vấn mẫu để so sánh số quan hệ tài khoản với số khách hàng duy nhất. Dữ liệu được tạo cho mục đích thực hành.
+## Bài thực hành đầu tiên
+
+Mở Kho Banking AI Mapping và chọn nhóm CIF. Chạy truy vấn mẫu, rồi giải thích vì sao số quan hệ tài khoản có thể lớn hơn số CIF duy nhất. Thử đổi điều kiện lọc và kiểm lại kết quả.

@@ -1,0 +1,22 @@
+Dữ liệu trong container
+
+Dockerfile mô tả cách build image. Khi chạy, container có một lớp ghi riêng. Mount đường dẫn kết quả ra ngoài để giữ bằng chứng đối soát khi container bị tạo lại. Pin phiên bản image để giảm khác biệt giữa máy học và CI.
+
+THỰC HÀNH
+
+Chọn nơi ghi kết quả rồi chạy mô phỏng xóa container và kiểm xem báo cáo còn truy cập được.
+
+VIDEO
+
+https://www.youtube.com/watch?v=Gjnup-PuquQ
+
+TỰ KIỂM TRA
+
+Thành phần nào là bản đóng gói để chạy nhiều lần?
+Đáp án: Image
+
+Cờ chỉ đọc hợp lý cho mount nào?
+Đáp án: Thư mục dữ liệu nguồn
+
+Pin image giúp đạt mục tiêu gì?
+Đáp án: Tái lập môi trường chạy

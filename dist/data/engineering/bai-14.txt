@@ -1,0 +1,22 @@
+Tiêu chí nghiệm thu dự án EOD
+
+Tách raw, staging, curated và mart. Viết hợp đồng dữ liệu trước khi nạp. Mỗi giao dịch thô cần được phân vào đúng một nhóm: hợp lệ, lặp hoặc cách ly. Tạo README hướng dẫn rerun và lưu audit để người khác tái lập kết quả.
+
+THỰC HÀNH
+
+Chạy lab SQL, chứng minh 360.000 = 230.000 + 80.000 + 50.000 VND. Sau đó thiết kế luồng Airflow và báo cáo theo master CIF.
+
+VIDEO
+
+https://www.youtube.com/watch?v=9N0ZNFezfVw
+
+TỰ KIỂM TRA
+
+Đẳng thức đối soát nào cần giữ?
+Đáp án: Raw = hợp lệ + lặp + cách ly
+
+Chạy cùng batch hai lần nên cho kết quả gì?
+Đáp án: Cùng số dòng và tổng tiền trong fact
+
+Đầu ra nào giúp người khác kiểm lại?
+Đáp án: README, audit và nguồn dữ liệu giả lập

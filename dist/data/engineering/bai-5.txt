@@ -1,0 +1,22 @@
+Object key và kiểm kê batch
+
+Bucket chứa object, còn key định danh object trong bucket. Prefix business_date=... cho phép liệt kê dữ liệu đúng kỳ. Đặt raw và curated ở hai vùng riêng. Manifest nên lưu danh sách key, số dòng và checksum của từng tệp để audit và chạy lại.
+
+THỰC HÀNH
+
+Chọn prefix theo ngày để liệt kê object trong kho mô phỏng. So sánh kết quả hai ngày.
+
+VIDEO
+
+https://www.youtube.com/watch?v=gY090GEDdu8
+
+TỰ KIỂM TRA
+
+Tiền tố nào hỗ trợ chọn đúng kỳ đối soát?
+Đáp án: business_date=2026-11-20/
+
+Manifest nên lưu thông tin nào để đối chiếu nội dung?
+Đáp án: Object key và checksum
+
+Raw zone nên giữ dữ liệu ở trạng thái nào?
+Đáp án: Bản gốc đúng theo lần nhận

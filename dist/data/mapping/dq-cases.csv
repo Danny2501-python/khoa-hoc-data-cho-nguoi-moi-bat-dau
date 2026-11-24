@@ -1,0 +1,17 @@
+case_id,table_name,expected_issue
+DQ01,PRF_CIF,duplicate CIF id
+DQ02,PRF_CIF,birth date in future
+DQ03,PRF_CIF,invalid gender code
+DQ04,PRF_DEP,orphan customer CIF
+DQ05,PRF_DEP,negative deposit balance test
+DQ06,PRF_LN,orphan loan customer
+DQ07,PRF_HIST,missing account for transaction
+DQ08,PRF_HIST,transaction owner mismatch
+DQ09,PRF_EFTPAY,negative payment instruction
+DQ10,STG_GL_POSTING,unbalanced journal when changing debit line
+DQ11,STG_CIF_PROFILE,invalid KYC status
+DQ12,STG_CIF_CONTACT,bad email format
+DQ13,STG_LOAN_INSTALLMENT,installment paid greater than due
+DQ14,PRF_RELCIF,orphan authorized/owner relation
+DQ15,STG_TX_CHANNEL,unknown channel code
+DQ16,PRF_HIST,invalid/mismatched transaction currency

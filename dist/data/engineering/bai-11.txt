@@ -1,0 +1,22 @@
+Job, CronJob và kết quả bền vững
+
+Job quản lý công việc có điểm kết thúc và có thể thử lại Pod thất bại. CronJob tạo Job theo lịch. concurrencyPolicy điều khiển chồng lịch trong cùng CronJob. Dữ liệu vẫn cần khóa để tránh lặp khi chạy lại thủ công hoặc khi có nhiều nguồn kích hoạt.
+
+THỰC HÀNH
+
+Chọn chính sách Allow, Forbid hoặc Replace khi một Job còn chạy. Xem hiệu ứng trên lần lịch tiếp theo.
+
+VIDEO
+
+https://www.youtube.com/watch?v=PziYflu8cB8
+
+TỰ KIỂM TRA
+
+Tài nguyên nào phù hợp với batch hữu hạn?
+Đáp án: Job
+
+Forbid có tác dụng gì khi Job cũ còn chạy?
+Đáp án: Bỏ lượt tạo Job mới từ cùng CronJob
+
+Kết quả cần lưu ở đâu để còn khi Pod bị xóa?
+Đáp án: Kho lưu trữ bền vững
