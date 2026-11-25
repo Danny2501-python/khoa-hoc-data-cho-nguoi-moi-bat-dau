@@ -9,10 +9,15 @@ Lộ trình tự học tiếng Việt với Excel, SQL, Python và Power BI. Kh�
 Từ thư mục repo, chạy:
 
 ```sh
+python3 scripts/prepare_site.py
 python3 -m http.server 8000 --directory dist
 ```
 
-Mở http://localhost:8000. Bạn có thể tạo bản HTML tải về bằng `python3 scripts/export_offline.py` hoặc mở trực tiếp khóa học qua link trên. Một số lab và video cần Internet.
+Mở http://localhost:8000. Lệnh chuẩn bị giải nén 360 video Data Engineering từ `media/engineering/` vào `dist/`. Bạn có thể tạo bản HTML tải về bằng `python3 scripts/export_offline.py` hoặc mở trực tiếp khóa học qua link trên. Một số lab và video cần Internet.
+
+## Triển khai Cloudflare Pages
+
+Dự án `datalabstudy` dùng Direct Upload. Chạy `python3 scripts/prepare_site.py` trước khi triển khai toàn bộ thư mục `dist/`. Mã nguồn được lưu ở repo này và lượt đẩy mã lên GitHub không tự kích hoạt một bản production.
 
 ## Cấu trúc dự án
 
@@ -21,6 +26,7 @@ Mở http://localhost:8000. Bạn có thể tạo bản HTML tải về bằng `
 | [dist/](dist/) | HTML, CSS và JavaScript của ứng dụng học |
 | [curriculum/](curriculum/) | Nội dung nền tảng, danh mục sách, ví dụ và video |
 | [dist/data/](dist/data/) | Tệp CSV, SQLite và dữ liệu bài thực hành |
+| [media/engineering/](media/engineering/) | Video tóm tắt cho 12 khóa Data Engineering, 30 buổi mỗi khóa |
 | [scripts/](scripts/) | Tạo học liệu, dữ liệu theo buổi và bản HTML ngoại tuyến |
 
 Ứng dụng chạy trong trình duyệt. Lab SQL dùng SQLite trong Web Worker. Tiến độ lưu trong trình duyệt theo địa chỉ web đang mở.

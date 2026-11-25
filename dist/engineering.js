@@ -79,6 +79,7 @@ function renderEngineering(track, level, rawId, {esc, page, st, fileLink}) {
         <section class="de-card"><h2>Bài thực hành</h2><p>${esc(lab)}</p></section>
         <section class="de-card"><h2>Tự kiểm tra</h2><p>${esc(question)}</p><details><summary>Xem đáp án và giải thích</summary><p>${esc(answer)}</p></details></section>
       </div>
+      ${master ? "" : `<div class="de-actions"><a href="#engineering/course/${id}">Học theo lộ trình 30 ngày</a></div>`}
       ${renderDePractice(id,{esc,fileLink,st})}
       <div class="de-actions"><label><input type="checkbox" data-engineering-done="${id}" ${st.engineering[id] ? "checked" : ""}> Đánh dấu đã học</label>
       ${next ? `<a href="${href(active, next.index)}">Bài tiếp theo</a>` : ""}</div>
@@ -87,9 +88,9 @@ function renderEngineering(track, level, rawId, {esc, page, st, fileLink}) {
   const downloads = [["giao-dich", "Giao dịch"], ["tai-khoan", "Tài khoản"], ["cif-mapping", "Ánh xạ CIF"]];
   const done = lessons.filter(({index}) => st.engineering[index]).length;
   return `<div class="de-page">
-    ${page("Lộ trình học", master ? "Master Data" : "Data Engineering", master ? "Chuẩn hóa CIF, quản trị metadata và truy vết dữ liệu ngân hàng." : "Từ Python và Docker đến điều phối pipeline, kho dữ liệu và báo cáo EOD.")}
+    ${master ? page("Lộ trình học", "Master Data", "Chuẩn hóa CIF, quản trị metadata và truy vết dữ liệu ngân hàng.") : `<header class="de-hero de-hub"><div class="de-level">Lộ trình học</div><h1>Data Engineering</h1><p>Học từng bước từ Python và Docker đến điều phối pipeline, kho dữ liệu và đối soát cuối ngày.</p><div class="de-hub-stats"><span><strong>12</strong> khóa học</span><span><strong>30</strong> ngày mỗi khóa</span></div></header>`}
     <section class="de-card de-dataset"><div><h2>Dữ liệu thực hành</h2><p>CSV mẫu và bộ dữ liệu mở rộng cho bài đối soát EOD. ${done}/${lessons.length} bài đã học.</p></div><div class="de-actions">${downloads.map(([name, label]) => fileLink({path: "data/engineering/" + name + ".csv", label})).join("")}${fileLink({path:"data/engineering/eod-practice.zip",label:"Tải bộ dữ liệu mở rộng"})}</div></section>
     <nav class="de-filters" aria-label="Lọc bài học">${levels.map((label, index) => `<a href="${href(index)}" ${index === active ? 'aria-current="page"' : ""}>${esc(label)}</a>`).join("")}</nav>
-    <div class="de-grid">${visible.map(({lesson, index}) => `<article class="de-card"><span class="de-level">${esc(lesson[1])}${st.engineering[index] ? " · Đã học" : ""}</span><h2><a href="${href(active, index)}">${esc(lesson[0])}</a></h2><p>${esc(lesson[3])}</p></article>`).join("")}</div>
+    <div class="de-grid">${visible.map(({lesson, index}) => `<article class="de-card"><span class="de-level">${esc(lesson[1])}${st.engineering[index] ? " · Đã học" : ""}</span><h2><a href="${master ? href(active, index) : "#engineering/course/" + index}">${esc(lesson[0])}</a></h2><p>${esc(lesson[3])}</p>${master ? "" : `<div class="de-actions"><a class="de-primary" href="#engineering/course/${index}">Mở lộ trình 30 ngày</a><a href="${href(active, index)}">Bài lab</a></div>`}</article>`).join("")}</div>
   </div>`;
 }
